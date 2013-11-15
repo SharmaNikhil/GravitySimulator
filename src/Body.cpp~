@@ -1,5 +1,6 @@
 #include "Body.h"
 #include "iostream"
+#include "math.h"
 
 class Body
 {
@@ -24,5 +25,11 @@ public:
 	float getXPos(){return x_pos;}
 	float getYPos(){return y_pos;}
 	float getZPos(){return z_pos;}
-	float getDistance(Body b){return sqrt( ((x-b.getXPos())^2)+((y-b.getYPos())^2)+((z-z.getZPos())^2) );}
-}
+	float getDistance(Body b){return sqrt( (pow(x-b.getXPos(),2))+(pow(y-b.getYPos(),2))+(pow(z-z.getZPos(),2)) );}
+	PhysicsVector getVelocity(){return vel;}
+	PhysicsVector getAcceleration(){return acc;}
+	void interactWith(Body b)
+	{
+		//TODO add gravity code
+	}
+};

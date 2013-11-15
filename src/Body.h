@@ -1,3 +1,6 @@
+#ifndef "math.h"
+#define "math.h"
+#pragma once
 class Body
 {
 private:

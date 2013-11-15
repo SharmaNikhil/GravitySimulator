@@ -1,3 +1,5 @@
+#ifndef "math.h"
+#define "math.h"
 class Body
 {
 private:
@@ -14,7 +16,7 @@ public:
 	float getYPos();
 	float getZPos();
 	float getDistance(Body b);
-	Vector getVelocity();
-	Vector getAcceleration();
+	PhysicsVector getVelocity();
+	PhysicsVector getAcceleration();
 	void interactWith(Body b); //modifies acceleration of this body, not body b
 }
