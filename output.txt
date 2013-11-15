@@ -1,0 +1,41 @@
+In file included from src/Body.cpp:1:0:
+src/Body.h:1:9: error: macro names must be identifiers
+src/Body.h:1:0: error: unterminated #ifndef
+src/Body.cpp:11:2: error: ‘PhysicsVector’ does not name a type
+src/Body.cpp:12:2: error: ‘PhysicsVector’ does not name a type
+src/Body.cpp:14:47: error: ‘PhysicsVector’ has not been declared
+src/Body.cpp:14:64: error: ‘PhysicsVector’ has not been declared
+src/Body.cpp:38:2: error: expected ‘}’ at end of input
+src/Body.cpp: In constructor ‘Body::Body(float, float, float, float, int, int)’:
+src/Body.cpp:20:3: error: ‘vel’ was not declared in this scope
+src/Body.cpp:21:3: error: ‘acc’ was not declared in this scope
+src/Body.cpp: In member function ‘float Body::getMass()’:
+src/Body.cpp:23:30: error: expected primary-expression before ‘)’ token
+src/Body.cpp:23:30: error: expected ‘;’ before ‘)’ token
+src/Body.cpp:25:17: error: a function-definition is not allowed here before ‘{’ token
+src/Body.cpp:26:17: error: a function-definition is not allowed here before ‘{’ token
+src/Body.cpp:27:23: error: a function-definition is not allowed here before ‘{’ token
+src/Body.cpp:28:23: error: a function-definition is not allowed here before ‘{’ token
+src/Body.cpp:29:23: error: a function-definition is not allowed here before ‘{’ token
+src/Body.cpp:30:23: error: variable or field ‘addAcceleration’ declared void
+src/Body.cpp:30:23: error: ‘PhysicsVector’ was not declared in this scope
+src/Body.cpp:31:27: error: a function-definition is not allowed here before ‘{’ token
+src/Body.cpp:32:16: error: expected ‘;’ before ‘getVelocity’
+src/Body.cpp:33:16: error: expected ‘;’ before ‘getAcceleration’
+src/Body.cpp:35:2: error: a function-definition is not allowed here before ‘{’ token
+src/Body.cpp: At global scope:
+src/Body.cpp:38:1: error: expected unqualified-id at end of input
+In file included from src/Physics.cpp:2:0:
+src/Physics.h:2:9: error: macro names must be identifiers
+src/Physics.h:2:0: error: unterminated #ifndef
+src/Physics.cpp:8:44: error: invalid operands of types ‘double’ and ‘int’ to binary ‘operator^’
+src/Physics.cpp:9:22: error: ‘Body’ has not been declared
+src/Physics.cpp:9:30: error: ‘Body’ has not been declared
+src/Physics.cpp:13:1: error: expected ‘;’ after class definition
+src/Physics.cpp: In static member function ‘static float Physics::gForce(int, int)’:
+src/Physics.cpp:11:22: error: request for member ‘getMass’ in ‘b1’, which is of non-class type ‘int’
+src/Physics.cpp:11:35: error: request for member ‘getMass’ in ‘b2’, which is of non-class type ‘int’
+src/Physics.cpp:11:49: error: request for member ‘getDistance’ in ‘b1’, which is of non-class type ‘int’
+In file included from src/PhysicsVector.cpp:1:0:
+src/PhysicsVector.h:2:9: error: macro names must be identifiers
+src/PhysicsVector.h:2:0: error: unterminated #ifndef

@@ -1,6 +1,9 @@
 #ifndef "math.h"
 #define "math.h"
 #pragma once
+
+#include "PhysicsVector.h"
+
 class Body
 {
 private:
@@ -16,6 +19,10 @@ public:
 	float getXPos();
 	float getYPos();
 	float getZPos();
+	void setXPos(float x);
+	void setYPos(float y);
+	void setZPos(float z);
+	void addAcceleration(PhysicsVector a);
 	float getDistance(Body b);
 	PhysicsVector getVelocity();
 	PhysicsVector getAcceleration();
